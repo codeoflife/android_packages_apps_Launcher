@@ -111,7 +111,8 @@ public class BubbleTextView extends TextView {
             }
 
             if ((scrollX | scrollY) == 0) {
-                background.draw(canvas);
+                //no icon background!
+                //background.draw(canvas);
             } else {
                 canvas.translate(scrollX, scrollY);
                 background.draw(canvas);
@@ -129,7 +130,8 @@ public class BubbleTextView extends TextView {
 	                top + layout.getLineTop(0) -  mPaddingV,
 	                Math.min(left + layout.getLineRight(0) + mPaddingH, getScrollX() + getRight() - getLeft()),
 	                top + layout.getLineBottom(0) + mPaddingV);
-	        canvas.drawRoundRect(rect, mCornerRadius, mCornerRadius, mPaint);
+	        //no icon background!
+	        //canvas.drawRoundRect(rect, mCornerRadius, mCornerRadius, mPaint);
         }
         super.draw(canvas);
     }
